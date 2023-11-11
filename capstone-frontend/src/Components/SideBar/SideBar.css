@@ -1,0 +1,20 @@
+.sidebar_container{
+    height:100%;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: -54px;
+}
+
+.nav-link.align-middle.px-0.active{
+    color: #fff !important;
+    background-color: #3c1053 !important;
+    padding-left: 5px !important;
+
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar_container{
+        display: none;
+    }
+  }
+  

@@ -1,0 +1,24 @@
+server:
+  port: 8089
+
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: API-GateWay
+
+  cloud:
+    gateway:
+      routes:
+        - id: otp-service
+          uri: lb://otp-service
+          predicates:
+            - Path=/otp/**
+
+        - id: bank-service
+          uri: lb://bank-service
+          predicates:
+            - Path=/**
+

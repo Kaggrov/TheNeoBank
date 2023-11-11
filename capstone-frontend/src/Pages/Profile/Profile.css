@@ -1,0 +1,10 @@
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+}

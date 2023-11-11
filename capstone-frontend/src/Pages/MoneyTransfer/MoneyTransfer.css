@@ -1,0 +1,54 @@
+.input_group {
+  width: 83% !important;
+}
+.input_payee {
+  padding: 10px;
+  margin: 20px 10px;
+  background-color: #f9ecee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  .modal-footer {
+    justify-content: center;
+  }
+}
+.account_table_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 10px;
+  gap: 12px;
+  background: #f9ecee;
+  border: 1px solid #f78e99;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.filler_box {
+  background: rgb(211, 208, 208);
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .input_group {
+    max-width: 100vw;
+  }
+  .input_payee {
+    padding: 7px;
+    margin: 20px 6px;
+    gap: 0;
+    flex-direction: column;
+    max-width: 100vw;
+  }
+  .account_table_group {
+    flex-direction: column;
+    max-width: 100vw;
+  }
+  .filler_box {
+    max-width: 100vw;
+  }
+}

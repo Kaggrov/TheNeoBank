@@ -1,0 +1,162 @@
+.support_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background: #d9d7d7;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 14px;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a287d;
+  font-size: 28px;
+  font-weight: 500;
+}
+.filler_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9d7d7;
+}
+.filler_head {
+  color: #5a287d;
+  font-size: 22px;
+  font-weight: 500;
+}
+.filler_content {
+  color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ticket_container {
+  display: flex;
+  flex: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffe9ec;
+  margin: 14px;
+  border-radius: 14px;
+}
+
+.ticket_header,
+.history_header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5a287d;
+  padding: 6px;
+  background: #d9d7d7;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.contact_header {
+  font-size: 28px;
+  font-weight: 500;
+  color: #5a287d;
+  padding: 6px;
+  background: #ffe9ec;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  top: -16px;
+  position: relative;
+}
+
+.history_container {
+  display: flex;
+  flex: 40%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #ffe9ec;
+  margin: 14px;
+  border-radius: 14px;
+}
+.ticket_form {
+  padding: 12px;
+}
+
+.history_data {
+  width: 100%;
+  padding: 12px;
+}
+
+.list_item {
+  padding: 8px;
+}
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9d7d7;
+  margin: 15vh 10px;
+  padding: 16px;
+  border-radius: 14px;
+  gap: 42px;
+}
+.contact_card {
+  background: #5a287d;
+  color: white;
+  border-radius: 1rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d9d7d7;
+  margin: 15vh 10px;
+  padding: 16px;
+  border-radius: 14px;
+  gap: 42px;
+
+  .accordion-button.collapsed {
+    background: #ffe9ec;
+  }
+}
+
+.faq_header {
+  font-size: 28px;
+  font-weight: 500;
+  color: #5a287d;
+  padding: 6px;
+  background: #ffe9ec;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  top: -16px;
+  position: relative;
+  text-align: center;
+}
+
+.report_container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .support_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d9d7d7;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 14px;
+  }
+  .ticket_container {
+    flex: 100%;
+  }
+  .history_container {
+    width: -webkit-fill-available;
+  }
+}
