@@ -1,0 +1,78 @@
+version: "2"
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: password
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-container
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 27017:27017
+
+  eureka-server:
+    build: EurekaServer/
+    container_name: eureka-server
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8761:8761
+
+  api-gateway:
+    build: ApiGateWay/
+    container_name: api-gateway
+    depends_on:
+      - eureka-server
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8089:8089
+
+  capstone-backend:
+    container_name: capstone-backend
+    build: capstone-backend/
+    hostname: localhost
+    network_mode: "host"
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongodb
+      - mysql
+  #    restart: always
+  twilio-otp:
+    container_name: twilio-otp
+    build: twilio_otp/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8001:8001
+    depends_on:
+      - eureka-server
+      - api-gateway
+    restart: always
+
+  capstone-frontend:
+    container_name: capstone-frontend
+    build: capstone-frontend/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 3000:3000
+    depends_on:
+      - capstone-backend
+
+    restart: always

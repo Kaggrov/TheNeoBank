@@ -1,0 +1,127 @@
+.SwipeCardContainer {
+  width:93%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  background:#ffe9ec ;
+  border-radius: 14px;
+}
+.rccs__card__background{
+    background:url("../../assets/card_bg.jpg") !important;
+    background-position-y: center !important;
+}
+.swiper_container {
+  height: 15rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 25rem !important;
+  height: 10rem;
+  position: relative;
+}
+
+.swiper-slide-active{
+  .rccs__card--front{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper_container {
+    height: 20rem;
+  }
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.swiper-slide .card {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: 98% !important;
+  transform: translateX(-58%) !important;
+
+}
+
+.slider-controler .swiper-button-prev {
+    left: 2% !important;
+    transform: translateX(-30%) !important;
+
+  }
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-prev {
+    left: 2% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .slider-controler{
+    display: none;
+  }
+}
+
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  color:#5a287d;
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 5rem !important;
+  bottom: auto !important;
+  left:auto !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #5a287d;
+}

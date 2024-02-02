@@ -1,0 +1,33 @@
+
+.login_btn{
+    background-color: #3c1053 ;
+    color: white;
+    border:1px solid #3c1053;
+}
+.login_btn:hover{
+    background-color: transparent;
+    color: #3c1053;
+    border:1px solid #3c1053;
+}
+
+.login-container{
+
+    /* border: 1 px solid #3c1053; */
+    border-radius: 2rem;
+    margin:0rem auto;
+    
+}
+.login-heading{
+    color: #3c1053;
+    font-weight: bolder;
+    text-align: center;
+}
+.btn_div_login{
+    text-align: center;
+}
+.formcontainer{
+    margin:2rem 1rem;
+    padding:2rem 5rem;
+    background-color: #FFDBEC;
+    border-radius: 2rem;
+}

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = "https://gitlab.stackroute.in/kggrover001/team3capstoneproject/-/tree/Twilio_Otp#modal-upload-blob"
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "twilio"]
+	url = https://gitlab.stackroute.in/kggrover001/team3capstoneproject
+	fetch = +refs/heads/*:refs/remotes/twilio/*
+[remote "otp"]
+	url = https://gitlab.stackroute.in/kggrover001/team3capstoneproject.git
+	fetch = +refs/heads/*:refs/remotes/otp/*

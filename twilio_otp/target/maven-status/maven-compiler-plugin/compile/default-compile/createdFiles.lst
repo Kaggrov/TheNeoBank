@@ -1,0 +1,9 @@
+com\javatechie\twilio\config\CorsConfig.class
+com\javatechie\twilio\dto\PasswordResetResponseDto.class
+com\javatechie\twilio\resource\TwilioOTPHandler.class
+com\javatechie\twilio\service\TwilioOTPService.class
+com\javatechie\twilio\config\TwilioConfig.class
+com\javatechie\twilio\dto\OtpStatus.class
+com\javatechie\twilio\TwilioOtpExampleApplication.class
+com\javatechie\twilio\dto\PasswordResetRequestDto.class
+com\javatechie\twilio\resource\TwilioRouterConfig.class

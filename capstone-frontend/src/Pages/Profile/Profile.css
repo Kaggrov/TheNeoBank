@@ -1,0 +1,33 @@
+.profile_page {
+  padding: 10px;
+  padding-bottom: 10%;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-bg-cherry {
+  background: linear-gradient(to right, #493240, #f09) !important;
+  color: #fff;
+}
+
+.wallet{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  padding: 8px;
+  background: #F2F2F8;
+  border-radius: 8px;
+  margin: 10px;
+}
+.balance {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}

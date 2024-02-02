@@ -1,0 +1,79 @@
+.dashboard{
+  .main_container{
+    padding:10px;
+  }
+  .creditcard {
+      text-decoration: none;
+     
+  }
+  .cc {
+      height: 150px;
+      opacity: 0.2;
+  }
+  .googlefont {
+      font-family: 'Dela Gothic One', cursive;
+      color: purple;
+      text-decoration: none;
+  }
+  a.link {
+      color: #fff;
+      text-decoration: none;
+      
+      display: inline-block;
+      
+      position: relative;
+    }
+    a.link:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: purple;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    a.link:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
+    .space {
+      display: flex;
+      margin: auto;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: auto;
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Adjust alignment as needed */
+    }
+    
+    .DashboardCard {
+      width: calc(33.33% - 16px); /* Adjust the width and margin as needed */
+      margin: 8px;
+    }
+
+}

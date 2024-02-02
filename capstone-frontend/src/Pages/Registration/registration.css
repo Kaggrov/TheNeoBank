@@ -1,0 +1,47 @@
+.registration-container{
+    border-radius: 2rem;
+    margin:0rem 20rem;
+}
+.registration-heading{
+    color: #3c1053;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.registration_btn{
+    background-color: #3c1053 ;
+    color: white;
+    border:1px solid #3c1053;
+    align-self: center;
+}
+.registration_btn:hover{
+    background-color: transparent;
+    color: #3c1053;
+    border:1px solid #3c1053;
+}
+.send_otp_btn{
+    background-color: #ffdbec ;
+    color: #3c1053;
+    border:1px solid #3c1053;
+}
+
+.send_otp_btn:hover{
+    background-color: #3c1053 ;
+    color: #ffdbec ;
+    border:1px solid #3c1053;
+}
+
+.form_lablel{
+    align-self:start;
+}
+.btn_div{
+    margin: 1rem 0;
+    justify-content: space-around;
+    display: flex;
+}
+.formcontainer{
+    margin:2rem 1rem;
+    padding:2rem 5rem;
+    background-color: #FFDBEC;
+    border-radius: 2rem;
+}

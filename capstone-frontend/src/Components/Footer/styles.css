@@ -1,0 +1,11 @@
+.social_img{
+    width: 5rem;
+    height: auto;
+    padding: 0.5rem 1rem;
+}
+
+.footer_container{
+  background-color: #3c1053;
+  color: #ffdbec;
+  height: 30vh;
+}

@@ -1,0 +1,13 @@
+.Main_container {
+  margin-left: 198px;
+  overflow-y: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .Main_container {
+    max-width: 100vw;
+    margin-left: 0;
+  }
+}
+
+
